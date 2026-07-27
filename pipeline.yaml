@@ -8,12 +8,12 @@ spec:
     - name: dockerconfig-ws
   params:
     - name: build-image
+      default: "unused"
     - name: repo-url
     - name: branch
       default: main
     - name: app-name
   tasks:
-
     - name: init
       workspaces:
         - name: source
